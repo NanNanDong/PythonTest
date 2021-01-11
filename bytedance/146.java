@@ -84,3 +84,24 @@ public class LRUCache {
     // endregion ======
 
 }
+
+
+
+// 基于LinkedHashMap
+
+class LRUCache {
+
+    private LinkedHashMap map;
+
+    public LRUCache(int capacity) {
+        map = new LinkedHashMap()
+    }
+    
+    public int get(int key) {
+
+    }
+    
+    public void put(int key, int value) {
+
+    }
+}
