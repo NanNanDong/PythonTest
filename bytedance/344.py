@@ -13,11 +13,7 @@ class Solution:
         # size = math.ceil(5 / 2)
 
         for i in range(size):
-            print(i)
             s[i], s[lenz - i - 1] = s[lenz - i - 1], s[i]
-
-        print(s)
-
 
         
 x = Solution()
