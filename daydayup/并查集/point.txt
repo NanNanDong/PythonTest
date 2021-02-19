@@ -1,0 +1,3 @@
+find 是查找元素p所对应的集合编号
+
+基于size的压缩，基于ranke的压缩，union时路径压缩，find时递归压缩

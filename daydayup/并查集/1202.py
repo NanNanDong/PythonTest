@@ -44,8 +44,8 @@ class Solution:
         res = list()
         for i in range(len(s)):
             x = unionSet.find(i)
-            res.append(mp[x][-1])
-            mp[x].pop()
+            res.append(mp[x][-1]) # 最后一个是最小的
+            mp[x].pop() # 添加一个pop掉一个
 
         return "".join(res)
 
