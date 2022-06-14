@@ -60,13 +60,15 @@ public class LRUCache {
 
     // region ===== 辅助函数 =====
     private void addToHead(DLinkedNode node){
-        node.prev = head;
+        // 插入到伪头节点到后面
+        node.prev = head; 
         node.next = head.next;
         head.next.prev = node;
         head.next = node;
     } 
 
     private void removeNode(DLinkedNode node){
+        // LRU需要双向链表的原因：删除操作，需要知道前驱
         node.prev.next = node.next;
         node.next.prev = node.prev;
     }
